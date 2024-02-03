@@ -50,7 +50,7 @@ function contractSidebar() {
 }
 
 function addChannelClass() {
-    let dms = document.querySelector("ul[aria-label='Direct Messages'");
+    let dms = document.querySelector("ul[aria-label='Direct Messages']");
     if(dms == null) return "";
     let friendsElement = dms.childNodes[1]
     if(friendsElement == null) return "";
@@ -64,7 +64,7 @@ function addChannelClass() {
 }
 
 function clickPopOut() {
-    let popOutButton = document.querySelector("button[aria-label='Pop Out'");
+    let popOutButton = document.querySelector("button[aria-label='Pop Out']");
     if(popOutButton == null) return;
     popOutButton.click();
 }
@@ -72,7 +72,6 @@ function clickPopOut() {
 class chatlessdisc {
 
     constructor() {
-        // this.channelClassName = "";
         this.channelActionsModule = BdApi.findModuleByProps('selectChannel');
     }
 
